@@ -1,11 +1,29 @@
 import React from 'react'
+import Link from 'next/link';
 
 const InsidePage = () => {
+  const dataToSend = 'Hello from Page A';
+  const data1 = 'hobby'
+  const data2 = 'podcast'
   return (
-    <div className="relative bg-white w-full h-[1024px] overflow-hidden text-left text-xl text-black font-raleway">
-      <b className="absolute top-[489px] left-[193px]">Learn A Hobby</b>
+    <div className=" bg-white w-full h-[1024px] overflow-hidden text-left text-xl text-black font-raleway">
 
-      <b className="absolute top-[493px] left-[1091px]">Listen to a Podcast</b>
+      <Link className='absolute top-[489px] left-[193px]'
+        href={{
+          pathname: '/chat-gpt',
+          query: {search: "hobby"}
+        }}
+      >
+        Hobby
+      </Link>
+      <Link className='absolute top-[493px] left-[1091px]'
+        href={{
+          pathname: '/chat-gpt',
+          query: {search: "podcast"}
+        }}
+      >
+        Listen to a Podcast
+      </Link>
       <b className="absolute top-[490px] left-[660px]">Read a book</b>
 
       <b className="absolute top-[774px] left-[219px]">Watch TV</b>
