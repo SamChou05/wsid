@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className=" bg-gray w-full h-[1024px] overflow-hidden text-left text-5xl text-black font-raleway">
       <Link href = 'first-choice' className='p-0 bg-[transparent] absolute top-[594px] left-[631px] text-[33px] font-raleway text-black text-left inline-block w-[179px] h-[38px]'>
-        get started 1
+        get started 2
       </Link>
     </div>
   )
